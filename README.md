@@ -9,7 +9,7 @@
 
 ## 📌 Repository Overview
 
-This repository contains lab exercises, problem-solving practical tasks, and experiential learning activities completed as part of the **Experiential Learning (Python Programming)** curriculum. The repository is organized into distinct modules encompassing core Python fundamentals, data structures, file and CSV manipulation, object-oriented software engineering, real-world utility mini-projects, and an enterprise-grade cryptographic hardware security application (**HWGuard**).
+This repository contains lab exercises, problem-solving practical tasks, foundational task sheets, and experiential learning activities completed as part of the **Experiential Learning (Python Programming)** curriculum. The repository is organized into distinct modules encompassing core Python fundamentals, data structures, file and CSV manipulation, object-oriented software engineering, real-world utility mini-projects, and an enterprise-grade cryptographic hardware security application (**HWGuard**).
 
 Each program is implemented with clean, documented Python source code, interactive terminal interfaces, and robust error handling to demonstrate comprehensive practical programming mastery.
 
@@ -20,13 +20,14 @@ Each program is implemented with clean, documented Python source code, interacti
 | Directory / File Name | Category | Topics / Scope |
 | :--- | :--- | :--- |
 | **`25BTRAD119_Lab Exercises/`** | Core Lab Submissions | Comprehensive laboratory programs (Exercises 2 to 16) spanning basic I/O, operators, calculators, prime/factorial algorithms, recursion, dictionary CRUD, log file analyzers, persistent text/CSV databases, OOP banking and library systems, and probability simulation. |
-| **`25BTRAD119_Problem Solving/`** | Practical Task Sheets | Real-world problem-solving modules including an interactive Point-of-Sale (POS) bill generator, student grading system, secure 6-digit OTP generator & verifier, sales revenue analyzer, and an enterprise student attendance tracking system. |
+| **`25BTRAD119_Problem Solving/`** | Problem Solving & Tasks | Foundational Python syntax task sheets (Tasks 1 to 18) alongside real-world problem-solving modules: Point-of-Sale (POS) bill generator, student grading system, secure 6-digit OTP generator & verifier, sales revenue analyzer, and an enterprise student attendance tracking system. |
 | **`25BTRAD119_Experiential Learning Activity/`** | Capstone Major Project | **HWGuard Universal Hardware Vault**: A portable, cross-platform hardware integrity auditor and anti-tamper security suite featuring a Tkinter GUI, salted Keccak-256 cryptographic hashing, Merkle snapshot roots, and hash-chained audit logging. |
 
 ### Detailed File & Module Mapping
 
 | File Name | Category | Topics / Scope |
 | :--- | :--- | :--- |
+| `25BTRAD119_TASK 1.py` to `18.py` | Foundational Tasks | Python Basics Workbook: Output formatting, escape sequences, comments, variables, type conversion, user input, temperature conversion, and modulus operations (Tasks 1–18). |
 | `25BTRAD119_LAB EXERCISE 2.PY` | Lab Exercise | Environment verification, basic console output formatting, student details. |
 | `25BTRAD119_LAB EXERCISE 3.PY` | Lab Exercise | Variables, type casting, input handling, and arithmetic/modulus operations. |
 | `25BTRAD119_LAB EXERCISE 4.PY` | Lab Exercise | Arithmetic calculator and geometric area calculations (circle & rectangle) with f-strings. |
@@ -164,7 +165,40 @@ Each program is implemented with clean, documented Python source code, interacti
 
 ---
 
-### 3. Experiential Learning Activity (Major Capstone Project)
+### 3. Foundational Tasks (Python Basics Tasks 1–18)
+
+Interactive exercises covering fundamental programming syntax, I/O, and mathematical constructs:
+
+* **Tasks 1–4: Basic Output & Pattern Formatting**
+  * `TASK 1.py`: Basic multi-line output printing student name, department, and university.
+  * `TASK 2.py`: Character block pattern generation (`*******`).
+  * `TASK 3.py`: Single-line console string output (`"Python is Easy"`).
+  * `TASK 4.py`: Sequential numerical pyramid generation (`1`, `12`, `123`, `1234`, `12345`).
+* **Tasks 5–6: Whitespace & Escape Sequences**
+  * `TASK 5.py`: Multi-line text splitting using newline (`\n`) escape sequences (`"Computer\nScience\nEngineering"`).
+  * `TASK 6.py`: Tabular column alignment using horizontal tab (`\t`) sequences (`"Name\tAge\tCity"`).
+* **Tasks 7–9: Documentation Comments**
+  * `TASK 7.py`: Single-line explanatory comment syntax (`#`).
+  * `TASK 8.py`: Multi-line documentation comment blocks (`"""`).
+  * `TASK 9.py`: Interspersed procedural inline comments across statements.
+* **Tasks 10–11: Variable Initialization & Assignment**
+  * `TASK 10.py`: String variable declaration and reference printing.
+  * `TASK 11.py`: Multi-variable assignment and sequential numeric display (`a = 10`, `b = 20`, `c = 30`).
+* **Tasks 12–13: Type Inspection & Type Casting**
+  * `TASK 12.py`: String-to-integer conversion (`int("100")`) and type validation with `type()`.
+  * `TASK 13.py`: Integer-to-float conversion (`float(25)`) and type inspection.
+* **Tasks 14–16: User Input & String Interpolation**
+  * `TASK 14.py`: Dynamic integer input capture using `input()` and `int()`.
+  * `TASK 15.py`: Two-number arithmetic addition from user prompts.
+  * `TASK 16.py`: Multi-field user profile capture (`name`, `age`, `cgpa`) with formatted f-string interpolation.
+* **Task 17: Temperature Conversion Formula**
+  * `TASK 17.py`: Celsius to Fahrenheit conversion ($F = (C \times \frac{9}{5}) + 32$) with two-decimal-place precision (`{:.2f}`).
+* **Task 18: Modulus & Parity Validation**
+  * `TASK 18.py`: Even/Odd parity checking using the modulus operator (`num % 2 == 0`).
+
+---
+
+### 4. Experiential Learning Activity (Major Capstone Project)
 
 #### 🛡️ HWGuard — Universal Hardware Vault & Cryptographic Anti-Tamper System
 
@@ -219,20 +253,25 @@ git clone https://github.com/vaibhavvvvjain03/25BTRAD119_PYTHON.git
 cd 25BTRAD119_PYTHON
 ```
 
-### 2. Run Lab Exercises
-Navigate to the lab exercise directory or run directly using Python:
+### 2. Run Foundational Tasks
+```bash
+python "25BTRAD119_Problem Solving/25BTRAD119_TASK 1.py"
+python "25BTRAD119_Problem Solving/25BTRAD119_TASK 17.py"
+```
+
+### 3. Run Lab Exercises
 ```bash
 python "25BTRAD119_Lab Exercises/25BTRAD119_LAB EXERCISE 4.PY"
 python "25BTRAD119_Lab Exercises/25BTRAD119_LAB EXERCISE 14.py"
 ```
 
-### 3. Run Problem Solving Tasks
+### 4. Run Problem Solving Applications
 ```bash
 python "25BTRAD119_Problem Solving/25BTRAD119_PROBLEM SOLVING 1.py"
 python "25BTRAD119_Problem Solving/25BTRAD119_PROBLEM SOLVING 4.py"
 ```
 
-### 4. Launch HWGuard Capstone Application
+### 5. Launch HWGuard Capstone Application
 ```bash
 python "25BTRAD119_Experiential Learning Activity/hwguard.py"
 ```
